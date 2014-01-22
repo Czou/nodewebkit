@@ -8,8 +8,9 @@
  */
 var user={},
 	  sqlite3=require('sqlite3').verbose(),
-	  db=new sqlite3.Database('data.db');
+	  db=new sqlite3.Database('data.sqlite');
 
+//sqlite测试
 user.test=function() {
 
 	db.serialize(function() {
@@ -27,5 +28,7 @@ user.test=function() {
 	});
 	db.close();
 }
+
+
 
 module.exports=user;
