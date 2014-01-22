@@ -60,7 +60,7 @@ nw.exe
 
 `````
 
-#### package参数介绍
+#### package参数简单介绍
 
 ````js
 
