@@ -29,6 +29,21 @@ user.test=function() {
 	db.close();
 }
 
+/**
+ * 登录操作
+ * @param username 用户名
+ * @param password 密码
+ * @param callback 回调
+ */
+user.login=function(username,password,callback) {
+
+		db.get('select id from user where userName=$username and password=$password',{
+			$username: username,
+			$password: password
+		},function(err,doc) {
+			callback(err,doc);
+		});
+}
 
 
 module.exports=user;
