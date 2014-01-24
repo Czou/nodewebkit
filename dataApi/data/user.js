@@ -12,7 +12,6 @@ var user={},
 
 //sqlite测试
 user.test=function() {
-
 	db.serialize(function() {
 		db.run("CREATE TABLE lorem (info TEXT)");
 
@@ -36,11 +35,7 @@ user.test=function() {
  * @param callback 回调
  */
 user.login=function(username,password,callback) {
-
-		db.get('select id from user where userName=$username and password=$password',{
-			$username: username,
-			$password: password
-		},function(err,doc) {
+		db.get('SELECT * FROM [user] where userName=? and password=?',[username,password],function(err,doc) {
 			callback(err,doc);
 		});
 }
