@@ -25,6 +25,16 @@ a,a:hover{color:#4682b4;}
 .m-login{width:600px;height:200px;padding:20px;border:1px solid #4682b4;border-radius: 5px;margin:100px auto;}
 .m-login li{height:30px;}
 .m-login .btn{margin:10px;}
+.m-nav{width:100%;height:104px;background:  -webkit-gradient(linear, 0 0, 0 100%, from(#4f5b75), to(#293655));position: relative;}
+.m-nav .uf{width:200px;height:30px;position: absolute;right:100px;bottom:10px;color:#fff;}
+.m-nav .uf a{color:#fff;margin:0 5px;}
+.m-main{width: 100%px;margin-left:-50px;}
+.m-main .pr{margin:100px 100px 0 200px;min-height: 100px;min-width: 100px;}
+.m-main a{background: url(../images/bg.png) 0 0 no-repeat;display: inline-block;width: 86px;height:34px;margin:20px 50px;padding-top:95px;text-align: center; }
+.m-main .a1{background-position: 0 0;}
+.m-main .a2{background-position: -87px 0;}
+.m-main .a3{background-position: -176px 0;}
+.m-main .a4{background-position: -262px 0;}
 
 
 /* u */
