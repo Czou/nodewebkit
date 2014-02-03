@@ -1,4 +1,3 @@
 @ECHO ON
-cd H:\nodejs\nodewebkit
+cd f:\nodejs\nodewebkit
 nw.exe
-pause

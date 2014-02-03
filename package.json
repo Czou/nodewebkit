@@ -1,6 +1,6 @@
 {
 	"name": "nw-demo",
-	"main": "http://127.0.0.1:3000/",
+	"main": "index.html",
 	"window": {
 		"toolbar": true,
 		"width": 800,
@@ -10,7 +10,6 @@
 	"dependencies": {
 		"ejs" : "*",
 		"xss" : "*",
-		"async" : "*",
-		"orm" : "*"
+		"async" : "*"
 	}
 }

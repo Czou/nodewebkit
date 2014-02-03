@@ -16,10 +16,10 @@
 <script src="public/js/jquery-1.8.0.min.js"></script>
 <script src="public/plug/layer/layer.min.js"></script>
 <script>
-  var
-    userApi=require('./dataApi/userApi.js');
-    gui = require('nw.gui');
-
+  var userApi=require('./dataApi/userApi.js'),
+    gui = require('nw.gui'),
+    config=require('./config/config.js');
+    $("#uname").focus();
     $('.btn').bind('click',function() {
        userApi.login($.trim($('#uname').val()), $.trim($('#password').val()),function(err,doc) {
            if(err) {
@@ -28,10 +28,10 @@
            if(doc) {
               //layer.alert(doc.id);
                gui.Window.get().close();
-               gui.Window.open('main.html',{
+               gui.Window.open(config.server,{
                    width: window.screen.width,
                    height: window.screen.height,
-                   toolbar: false
+                   toolbar: true
                });
            }
            else {
