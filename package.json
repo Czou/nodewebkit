@@ -10,6 +10,7 @@
 	"dependencies": {
 		"ejs" : "*",
 		"xss" : "*",
-		"async" : "*"
+		"async" : "*",
+		"sqlite3" : "*"
 	}
 }
